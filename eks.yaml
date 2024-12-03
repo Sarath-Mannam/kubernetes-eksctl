@@ -9,7 +9,7 @@ managedNodeGroups: # this is also completely managed by AWS
   - name: spot
     instanceType: m5.large
     # your K8 node can be anytime taken back by AWS
-    # spot: true
+    spot: true
     availabilityZones: # ebs static provisioning
     - us-east-1a
     desiredCapacity: 3
